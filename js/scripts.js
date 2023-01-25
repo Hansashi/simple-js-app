@@ -26,3 +26,11 @@ for (let i = 0; i < pokemonList.length; i++) {
         document.write(`${name} (height ${height})<br>`);
     }
 }
+
+pokemonList.forEach(pokemon => {
+    if (pokemon.height >= 1) {
+        document.write(`${pokemon.name} (height ${pokemon.height}) - Wow, that's big!<br>`);
+    } else {
+        document.write(`${pokemon.name} (height ${pokemon.height})<br>`);
+    }
+});
