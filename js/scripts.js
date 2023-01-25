@@ -30,7 +30,7 @@ let pokemonRepository = (function () {
     }
 })();
 
-pokemonList.forEach(pokemon => {
+pokemonRepository.getAll().forEach(function (pokemon) {
     if (pokemon.height >= 1) {
         document.write(`${pokemon.name} (height ${pokemon.height}) - Wow, that's big!<br>`);
     } else {
