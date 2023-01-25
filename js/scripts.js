@@ -24,9 +24,33 @@ let pokemonRepository = (function () {
         return pokemonList.push({ name: item });
     }
 
+    function addv(item) {
+        if (typeof (item) !== 'object')
+            return "Item is not an object!";
+        else {
+            function checkKeys(array) {
+                if (array.includes("name") &&
+                    array.includes("type") &&
+                    array.includes("height")) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            if (checkKeys(Object.keys(item))) {
+                return pokemonList.push(item);
+            } else {
+                return "Keys are not correct! name, type, height are required.";
+            }
+        }
+    }
+
     return {
         getAll: getAll,
-        add: add
+        add: add,
+        addv: addv
     }
 })();
 
