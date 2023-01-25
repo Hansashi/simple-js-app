@@ -47,10 +47,15 @@ let pokemonRepository = (function () {
         }
     }
 
+    function get(name) {
+        return pokemonList.find((pokemon) => pokemon.name.toLowerCase() === name.toLowerCase());
+    }
+
     return {
         getAll: getAll,
         add: add,
-        addv: addv
+        addv: addv,
+        get: get
     }
 })();
 
