@@ -1,0 +1,13 @@
+.pokemon-button {
+    font-family: inherit;
+    background-color: yellowgreen;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
