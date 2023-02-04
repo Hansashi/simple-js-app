@@ -65,12 +65,17 @@ let pokemonRepository = (function () {
         pokemonList.appendChild(listItem);
     }
 
+    function showDetails(pokemon) {
+        console.log(pokemon);
+    }
+
     return {
         getAll: getAll,
         add: add,
         addv: addv,
         get: get,
-        addListItem: addListItem
+        addListItem: addListItem,
+        showDetails: showDetails
     }
 })();
 
