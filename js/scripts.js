@@ -72,10 +72,12 @@ let pokemonRepository = (function () {
                 };
                 add(pokemon);
             });
-            hideLoadingMessage();
+            // make message readable for one second
+            setTimeout(hideLoadingMessage, 1000);
         }).catch(function (e) {
             console.error(e);
-            hideLoadingMessage();
+            // make message readable for one second
+            setTimeout(hideLoadingMessage, 1000);
         })
     }
 
@@ -89,10 +91,12 @@ let pokemonRepository = (function () {
             item.imageUrl = details.sprites.front_default;
             item.height = details.height;
             item.types = details.types;
-            hideLoadingMessage();
+            // make message readable for one second
+            setTimeout(hideLoadingMessage, 1000);
         }).catch(function (e) {
             console.error(e);
-            hideLoadingMessage();
+            // make message readable for one second
+            setTimeout(hideLoadingMessage, 1000);
         });
     }
 
