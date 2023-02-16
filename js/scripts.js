@@ -143,8 +143,8 @@ function showModal(title, text, spriteUrl) {
 
     // Add the new modal content
     let closeButtonElement = document.createElement('button');
-    closeButtonElement.classList.add('modal-close');
-    closeButtonElement.innerText = 'Close';
+    closeButtonElement.classList.add('modal-close-button');
+    closeButtonElement.innerText = 'x';
     closeButtonElement.addEventListener('click', hideModal);
 
     let titleElement = document.createElement('h1');
@@ -153,14 +153,15 @@ function showModal(title, text, spriteUrl) {
     let contentElement = document.createElement('p');
     contentElement.innerText = text;
 
-    let symbol = document.createElement('img');
-    symbol.src = spriteUrl;
-    symbol.alt = `Image of ${title}`;
+    let sprite = document.createElement('img');
+    sprite.classList.add('pokemon-sprite');
+    sprite.src = spriteUrl;
+    sprite.alt = `Picture of ${title}`;
 
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
     modal.appendChild(contentElement);
-    modal.appendChild(symbol);
+    modal.appendChild(sprite);
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');
