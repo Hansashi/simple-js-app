@@ -10,18 +10,18 @@ ul {
 
 .pokemon-button {
     font-family: inherit;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
     min-width: 150px;
 }
 
-.pokemon-button:hover {
+/* .pokemon-button:hover {
     cursor: pointer;
     opacity: 0.8;
-}
+} */
 
 .loadingMessage {
     visibility: hidden;
