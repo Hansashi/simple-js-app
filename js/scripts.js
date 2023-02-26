@@ -144,9 +144,3 @@ function hideLoadingMessage() {
     let message = document.querySelector(".loadingMessage");
     message.style.visibility = "hidden";
 }
-
-window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-        hideModal();
-    }
-});
