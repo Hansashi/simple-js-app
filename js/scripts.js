@@ -63,7 +63,6 @@ let pokemonRepository = (function () {
     function showDetails(pokemon) {
         let title = document.getElementById("pokemon-modal-label");
         title.innerText = pokemon.name;
-        // calpitalizeFirst(title);
         let pokemonModal = document.querySelector(".modal-body");
         pokemonModal.innerHTML = "";
         let height = document.createElement("h3");
