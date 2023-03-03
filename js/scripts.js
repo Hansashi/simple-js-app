@@ -1,6 +1,6 @@
 let pokemonRepository = (function () {
     let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+    let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
     function getAll() {
         return pokemonList;
@@ -11,19 +11,20 @@ let pokemonRepository = (function () {
     }
 
     function addv(item) {
-        if (typeof (item) !== 'object')
+        function checkKeys(array) {
+            if (array.includes("name") &&
+                array.includes("type") &&
+                array.includes("height")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        
+        if (typeof (item) !== "object")
             return "Item is not an object!";
         else {
-            function checkKeys(array) {
-                if (array.includes("name") &&
-                    array.includes("type") &&
-                    array.includes("height")) {
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            }
 
             if (checkKeys(Object.keys(item))) {
                 return pokemonList.push(item);
@@ -48,8 +49,8 @@ let pokemonRepository = (function () {
         button.innerText = pokemon.name;
         button.classList.add("pokemon-button");
         button.classList.add("btn-success");
-        button.setAttribute('data-target', '#pokemon-modal');
-        button.setAttribute('data-toggle', 'modal');
+        button.setAttribute("data-target", "#pokemon-modal");
+        button.setAttribute("data-toggle", "modal");
         listItem.appendChild(button);
         pokemonList.appendChild(listItem);
 
@@ -87,8 +88,7 @@ let pokemonRepository = (function () {
             });
             // make message readable for one second
             setTimeout(hideLoadingMessage, 1000);
-        }).catch(function (e) {
-            console.error(e);
+        }).catch(function () {
             // make message readable for one second
             setTimeout(hideLoadingMessage, 1000);
         })
@@ -107,8 +107,7 @@ let pokemonRepository = (function () {
             item.spriteUrl = details.sprites.front_default;
             // make message readable for one second
             setTimeout(hideLoadingMessage, 1000);
-        }).catch(function (e) {
-            console.error(e);
+        }).catch(function () {
             // make message readable for one second
             setTimeout(hideLoadingMessage, 1000);
         });
