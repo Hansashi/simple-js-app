@@ -74,6 +74,26 @@ let pokemonRepository = (function () {
         pokemonModal.appendChild(image);
     }
 
+    function navigatePokemons(direction) {
+        let currentPokemon = document.getElementById("pokemon-modal-label").innerHTML;
+        let posCurrent = pokemonList.findIndex(element => {
+            if (element.name === currentPokemon) {
+                return true;
+            }
+        });
+        let position;
+        if (direction === "next") {
+            position = posCurrent + 1
+        } else {
+            position = posCurrent - 1
+        }
+        let nextPokemon = pokemonList[position];
+
+        loadDetails(nextPokemon).then(function () {
+            showDetails(nextPokemon);
+        })
+    }
+
     function loadList() {
         return fetch(apiUrl).then(function (response) {
             return response.json();
@@ -101,6 +121,22 @@ let pokemonRepository = (function () {
         });
     }
 
+    let nextButton = document.querySelector(".next-button");
+
+    $(nextButton).ready(function () {
+        $(nextButton).click(function () {
+            navigatePokemons("next");
+        });
+    });
+
+    let prevButton = document.querySelector(".prev-button");
+
+    $(prevButton).ready(function () {
+        $(prevButton).click(function () {
+            navigatePokemons("prev");
+        });
+    });
+
     return {
         getAll: getAll,
         add: add,
@@ -127,3 +163,4 @@ $(pokemonList).ready(function () {
         $(".navbar-collapse").collapse("hide");
     });
 });
+
