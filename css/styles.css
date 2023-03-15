@@ -28,7 +28,12 @@ list-group {
   text-align: center;
   width: 100%;
 }
+
+.navbar {
+  height: 60px;
+}
+
 /* fixed navbar hides list-group, so we need a margin-top to make them visible */
 .page-container {
-  margin-top: 56px; 
+  margin-top: 60px; 
 }
