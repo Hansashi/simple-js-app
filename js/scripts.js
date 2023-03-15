@@ -75,7 +75,6 @@ let pokemonRepository = (function () {
     }
 
     function loadList() {
-        showLoadingMessage("Pokemons are on the way. Please wait...");
         return fetch(apiUrl).then(function (response) {
             return response.json();
         }).then(function (json) {
@@ -86,16 +85,10 @@ let pokemonRepository = (function () {
                 };
                 add(pokemon);
             });
-            // make message readable for one second
-            setTimeout(hideLoadingMessage, 1000);
-        }).catch(function () {
-            // make message readable for one second
-            setTimeout(hideLoadingMessage, 1000);
-        })
+        });
     }
 
     function loadDetails(item) {
-        showLoadingMessage("Analizing Pokemon-Details. Please wait...");
         let url = item.detailsUrl;
         return fetch(url).then(function (response) {
             return response.json();
@@ -105,11 +98,6 @@ let pokemonRepository = (function () {
             item.height = details.height;
             item.types = details.types;
             item.spriteUrl = details.sprites.front_default;
-            // make message readable for one second
-            setTimeout(hideLoadingMessage, 1000);
-        }).catch(function () {
-            // make message readable for one second
-            setTimeout(hideLoadingMessage, 1000);
         });
     }
 
@@ -130,18 +118,6 @@ pokemonRepository.loadList().then(function () {
         pokemonRepository.addListItem(pokemon);
     });
 });
-
-// loading message
-function showLoadingMessage(text) {
-    let message = document.querySelector(".loadingMessage");
-    message.innerText = text;
-    message.style.visibility = "visible";
-}
-
-function hideLoadingMessage() {
-    let message = document.querySelector(".loadingMessage");
-    message.style.visibility = "hidden";
-}
 
 // colapse bootstrap navbar when clicking outside the navbar #6
 let pokemonList = document.querySelector(".pokemon-list");
