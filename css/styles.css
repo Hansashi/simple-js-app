@@ -29,6 +29,14 @@ list-group {
   width: 100%;
 }
 
+.nav-buttons {
+  display: flex;
+}
+
+.nav-button {
+  width: 50%;
+}
+
 .navbar {
   height: 60px;
 }
