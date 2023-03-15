@@ -21,7 +21,7 @@ let pokemonRepository = (function () {
                 return false;
             }
         }
-        
+
         if (typeof (item) !== "object")
             return "Item is not an object!";
         else {
@@ -142,3 +142,12 @@ function hideLoadingMessage() {
     let message = document.querySelector(".loadingMessage");
     message.style.visibility = "hidden";
 }
+
+// colapse bootstrap navbar when clicking outside the navbar #6
+let pokemonList = document.querySelector(".pokemon-list");
+
+$(pokemonList).ready(function () {
+    $(pokemonList).click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+});
