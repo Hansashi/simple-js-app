@@ -1,6 +1,11 @@
 @font-face {
-  font-family: pokemonFont;
+  font-family: pokemonFontHollow;
   src: url("../resources/fonts//pokemon-hollow.ttf");
+}
+
+@font-face {
+  font-family: pokemonFontSolid;
+  src: url("../resources/fonts//pokemon-solid.ttf");
 }
 
 /* background image */
@@ -9,11 +14,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  font-family: pokemonFont;
+  font-family: pokemonFontHollow;
 }
 
 .navbar-brand {
-  font-family: pokemonFont;
+  font-family: pokemonFontSolid;
 }
 
 
