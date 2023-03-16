@@ -1,10 +1,21 @@
+@font-face {
+  font-family: pokemonFont;
+  src: url("../resources/fonts//pokemon-hollow.ttf");
+}
+
 /* background image */
 body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  font-family: pokemonFont;
 }
+
+.navbar-brand {
+  font-family: pokemonFont;
+}
+
 
 /* pokemon list */
 list-group {
@@ -18,7 +29,13 @@ list-group {
     padding: 10px;
     border-radius: 3px;
     /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
-    min-width: 150px;
+    max-width: 125px;
+    color: black;
+}
+
+.pokeballImage {
+  width: 50%;
+  height: 50%;
 }
 
 .modal-header .close {

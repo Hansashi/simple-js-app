@@ -46,7 +46,7 @@ let pokemonRepository = (function () {
         listItem.classList.add("group-list-item");
 
         let button = document.createElement("button");
-        button.innerText = pokemon.name;
+        button.innerHTML = "<img class='pokeballImage' src='resources/pokeball.png'/> " + pokemon.name;
         button.classList.add("pokemon-button");
         button.classList.add("btn-success");
         button.setAttribute("data-target", "#pokemon-modal");
