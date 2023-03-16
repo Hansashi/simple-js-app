@@ -17,6 +17,9 @@ body {
   font-family: pokemonFontHollow;
 }
 
+.navbar {
+  background-color: #cf3935;
+}
 .navbar-brand {
   font-family: pokemonFontSolid;
 }
