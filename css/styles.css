@@ -1,11 +1,3 @@
-/* background image */
-body {
-  background-image: url("../resources/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
 /* pokemon list */
 list-group {
   text-align: center;
@@ -49,4 +41,8 @@ list-group {
 /* fixed navbar hides list-group, so we need a margin-top to make them visible */
 .page-container {
   margin-top: 56px; 
+  background-image: url("../resources/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
