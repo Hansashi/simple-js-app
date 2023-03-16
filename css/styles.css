@@ -44,5 +44,5 @@ list-group {
 
 /* fixed navbar hides list-group, so we need a margin-top to make them visible */
 .page-container {
-  margin-top: 56px;
+  margin-top: 56px; 
 }
