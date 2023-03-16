@@ -14,14 +14,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  font-family: pokemonFontHollow;
+  font-family: pokemonFontSolid;
 }
 
 .navbar {
   background-color: #cf3935;
 }
+
 .navbar-brand {
   font-family: pokemonFontSolid;
+  font-size: 30px;
+  color: #fcc000 !important;
+  /* create a text-outline */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2f4591;
+}
+
+.navbar-toggler {
+  background-color: #546770;
 }
 
 
@@ -30,20 +40,23 @@ list-group {
   text-align: center;
 }
 
-.pokemon-button {
-    font-family: inherit;
-    /* background-color: yellowgreen; */
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
-    max-width: 125px;
-    color: black;
+.pokemon-button-container {
+  position: relative;
+  /* text-align: center; */
 }
 
-.pokeballImage {
-  width: 50%;
-  height: 50%;
+.pokemon-button-text {
+  font-family: pokemonFontSolid;
+  position: absolute;
+  top:72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.pokemon-button-image {
+    padding: 10px;
+    max-width: 200px;
 }
 
 .modal-header .close {
@@ -56,11 +69,21 @@ list-group {
 .modal-title {
   text-align: center;
   width: 100%;
+  font-family: pokemonFontSolid;
+  color: #fcc000 !important;
+  /* create a text-outline */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2f4591;
 }
 
 .modal-body {
   text-align: center;
   width: 100%;
+  font-family: pokemonFontSolid;
+  color: #fcc000 !important;
+  /* create a text-outline */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2f4591;
 }
 
 .nav-buttons {
@@ -69,9 +92,14 @@ list-group {
 
 .nav-button {
   width: 50%;
+  font-family: pokemonFontSolid;
+  color: #fcc000 !important;
+  /* create a text-outline */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2f4591;
 }
 
 /* fixed navbar hides list-group, so we need a margin-top to make them visible */
 .page-container {
-  margin-top: 56px; 
+  margin-top: 75px; 
 }

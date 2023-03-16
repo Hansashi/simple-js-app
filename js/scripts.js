@@ -43,13 +43,21 @@ let pokemonRepository = (function () {
         let listItem = document.createElement("li");
         listItem.classList.add("group-list-item");
 
-        let button = document.createElement("button");
-        button.innerHTML = "<img class='pokeballImage' src='resources/pokeball.png'/> " + pokemon.name;
-        button.classList.add("pokemon-button");
-        button.classList.add("btn-success");
+        let buttonContainer = document.createElement("div");
+        buttonContainer.classList.add("pokemon-button-container");
+
+        let button = document.createElement("img");
+        button.setAttribute("src", "resources/pokeball.png");
+        button.classList.add("pokemon-button-image");
         button.setAttribute("data-target", "#pokemon-modal");
         button.setAttribute("data-toggle", "modal");
-        listItem.appendChild(button);
+
+        let buttonText = document.createElement("div");
+        buttonText.classList.add("pokemon-button-text");
+        buttonText.innerText = pokemon.name;
+        buttonContainer.appendChild(button);
+        buttonContainer.appendChild(buttonText);
+        listItem.appendChild(buttonContainer);
         pokemonList.appendChild(listItem);
 
         button.addEventListener("click", () => {
