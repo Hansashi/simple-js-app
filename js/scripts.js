@@ -101,7 +101,7 @@ let pokemonRepository = (function () {
             json.results.forEach(function (item) {
                 let pokemon = {
                     name: item.name.charAt(0).toUpperCase() + item.name.slice(1),
-                    detailsUrl: item.url
+                    pokeapiUrl: item.url
                 };
                 add(pokemon);
             });
@@ -109,7 +109,7 @@ let pokemonRepository = (function () {
     }
 
     function loadDetails(item) {
-        let url = item.detailsUrl;
+        let url = item.pokeapiUrl;
         return fetch(url).then(function (response) {
             return response.json();
         }).then(function (details) {
