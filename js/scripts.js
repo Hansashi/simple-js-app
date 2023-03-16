@@ -35,9 +35,7 @@ let pokemonRepository = (function () {
     }
 
     function get(name) {
-        return pokemonList.find((pokemon) => pokemon.name.toLowerCase() === name.toLowerCase());
-        // or with filter() - but returns array
-        // return pokemonList.filter(pokemon => pokemon.name.toLowerCase()=== name.toLowerCase());
+        return pokemonList.find(pokemon => pokemon.name.toLowerCase() === name.toLowerCase());
     }
 
     function addListItem(pokemon) {
