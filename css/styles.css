@@ -13,7 +13,7 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw 100%;
+  background-size: 100vw 100vw;
   font-family: pokemonFontSolid;
 }
 
