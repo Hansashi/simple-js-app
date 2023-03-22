@@ -13,8 +13,10 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw calc(var(--vh, 1vh) * 100);;
+  background-size: 100vw;
   font-family: pokemonFontSolid;
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .navbar {
