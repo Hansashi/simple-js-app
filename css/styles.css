@@ -63,18 +63,9 @@ list-group {
   opacity: 75%;
 }
 
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  width: 35%;
-}
-
-.modal-dialog {
-  display: inline-block;
-  vertical-align: middle;
-  width: 35%;
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
 }
 
 .modal-header .close {
