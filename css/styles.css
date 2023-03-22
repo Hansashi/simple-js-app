@@ -13,7 +13,7 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100vw 100%;
   font-family: pokemonFontSolid;
 }
 
@@ -33,7 +33,6 @@ body {
 .navbar-toggler {
   background-color: #546770;
 }
-
 
 /* pokemon list */
 list-group {
