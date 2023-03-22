@@ -17,7 +17,7 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw 100vh;
+  background-size: 100vw;
   font-family: pokemonFontSolid;
   min-height: 100vh;
   min-height: -webkit-fill-available;
