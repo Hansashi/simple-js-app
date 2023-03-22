@@ -59,6 +59,10 @@ list-group {
     max-width: 200px;
 }
 
+.pokemon-button-image:hover {
+  opacity: 75%;
+}
+
 .modal-header .close {
   background-color: red;
   border-radius:80%;
