@@ -15,6 +15,8 @@ body {
   background-attachment: fixed;
   background-size: 100vw calc(100% + 200px);
   font-family: pokemonFontSolid;
+  min-height: -webkit-fill-available;
+  height: 100vh;
 }
 
 .navbar {
