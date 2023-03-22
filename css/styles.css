@@ -8,19 +8,13 @@
   src: url("../resources/fonts//pokemon-solid.ttf");
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 /* background image */
 body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw;
+  background-size: 100vw calc(var(--vh, 1vh) * 100);;
   font-family: pokemonFontSolid;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 .navbar {
