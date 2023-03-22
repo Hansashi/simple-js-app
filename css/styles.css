@@ -8,6 +8,10 @@
   src: url("../resources/fonts//pokemon-solid.ttf");
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 /* background image */
 body {
   background-image: url("../resources/background.jpg");
