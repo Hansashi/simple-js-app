@@ -40,6 +40,10 @@ list-group {
   text-align: center;
 }
 
+li {
+  list-style: none;
+}
+
 .pokemon-button-container {
   position: relative;
   /* text-align: center; */
