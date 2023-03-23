@@ -22,7 +22,7 @@ body {
   width: 100%;
   background-size: 100vw 100%;
   background-image: url("../resources/background.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .navbar {
