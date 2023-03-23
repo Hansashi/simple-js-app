@@ -1,4 +1,10 @@
-# PokDex Web App
+<p align="center">
+
+<h1 align="center" style="margin-top: 0px;">*** PokeDex ***</h1>
+
+</p>
+
+
 
 ![Screenshot](/resources/screenshot-pokedex.JPG?raw=true)
 
