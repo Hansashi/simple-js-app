@@ -13,11 +13,9 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100vw, calc(100% + 100px);
   font-family: pokemonFontSolid;
   background-position: fixed;
-  width: 100vw;
-  height: 100vh;
 }
 
 .navbar {
