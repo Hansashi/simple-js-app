@@ -13,7 +13,7 @@ body {
   background-image: url("../resources/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   font-family: pokemonFontSolid;
   background-position: fixed;
   width: 100vw;
