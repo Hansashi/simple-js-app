@@ -14,7 +14,7 @@ A web application to show informations for pokemons. Based on the [pokeAPI](http
 
 ## View
 
-Link to the project: [PokeDex](https://hansashi.github.io/simple-js-app/)
+Link to the project: [PokeDex](https://hansashi.github.io/pokedex/)
 
 ## Languages
 - HTML
