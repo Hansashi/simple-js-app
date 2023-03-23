@@ -122,4 +122,6 @@ li {
 /* fixed navbar hides list-group, so we need a margin-top to make them visible */
 .page-container {
   margin-top: 75px; 
+  position: relative;
+  z-index: 1;
 }
