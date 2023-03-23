@@ -81,6 +81,12 @@
     align-items: center;
   }
 
+  .modal-content {
+    background-color: #cf3935;
+    outline: black;
+    outline-width: 2px;
+  }
+
   .modal-header .close {
     background-color: red;
     border-radius:80%;
@@ -103,6 +109,7 @@
     width: 100%;
     font-family: pokemonFontSolid;
     color: #fcc000 !important;
+    background-color: #ffffff;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #2f4591;
@@ -116,6 +123,8 @@
     width: 50%;
     font-family: pokemonFontSolid;
     color: #fcc000 !important;
+    background-color: #e8524e;
+    border-color: black;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #2f4591;
