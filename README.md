@@ -1,6 +1,6 @@
 # PokDex Web App
 
-![Screenshot](https://github.com/hansashi/simple-js-app/tree/main/resources/screenshot-pokedex.jpg)
+![Screenshot](/resources/screenshot-pokedex.jpg?raw=true)
 
 ## Description
 
@@ -16,4 +16,4 @@ Link to the project: [PokeDex](https://hansashi.github.io/simple-js-app/)
 - JavaScript
 
 ## Sources & Credits
-- [PokéAPI](https://pokeapi.co/docs/v2
+- [PokéAPI](https://pokeapi.co/docs/v2)
