@@ -1,3 +1,10 @@
+:root {
+  --pokeball-color: #cf3935;
+  --pokeball-gray: #546770;
+  --text-stroke-color: #2f4591;
+  --background-yellow: #fcc000;
+}  
+  
   @font-face {
     font-family: pokemonFontHollow;
     src: url("../resources/fonts//pokemon-hollow.ttf");
@@ -29,20 +36,20 @@
   }
 
   .navbar {
-    background-color: #cf3935;
+    background-color: var(--pokeball-color);
   }
 
   .navbar-brand {
     font-family: pokemonFontSolid;
     font-size: 30px;
-    color: #fcc000 !important;
+    color: var(--background-yellow) !important;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2f4591;
+    -webkit-text-stroke-color: var(--text-stroke-color);
   }
 
   .navbar-toggler {
-    background-color: #546770;
+    background-color: var(--pokeball-gray);
   }
 
   /* pokemon list */
@@ -82,7 +89,7 @@
   }
 
   .modal-content {
-    background-color: #cf3935;
+    background-color: var(--pokeball-color);
     outline: black;
     outline-width: 2px;
   }
@@ -98,21 +105,21 @@
     text-align: center;
     width: 100%;
     font-family: pokemonFontSolid;
-    color: #fcc000 !important;
+    color: var(--background-yellow) !important;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2f4591;
+    -webkit-text-stroke-color: var(--text-stroke-color);
   }
 
   .modal-body {
     text-align: center;
     width: 100%;
     font-family: pokemonFontSolid;
-    color: #fcc000 !important;
+    color: var(--background-yellow) !important;
     background-color: #ffffff;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2f4591;
+    -webkit-text-stroke-color: var(--text-stroke-color);
   }
 
   .nav-buttons {
@@ -122,12 +129,12 @@
   .nav-button {
     width: 50%;
     font-family: pokemonFontSolid;
-    color: #fcc000 !important;
-    background-color: #e8524e;
+    color: var(--background-yellow) !important;
+    background-color: var(--pokeball-color);
     border-color: black;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2f4591;
+    -webkit-text-stroke-color: var(--text-stroke-color);
   }
 
   /* fixed navbar hides list-group, so we need a margin-top to make them visible */
