@@ -97,8 +97,8 @@
   .modal-header .close {
     background-color: red;
     border-radius:80%;
-    padding: 0px 5px 4px 5px;
-    margin: -5px -5px 5px 5px;
+    padding: 5px;
+    margin: 0;
   }
 
   .modal-title {
