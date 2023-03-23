@@ -1,6 +1,5 @@
 :root {
   --pokeball-color: #cf3935;
-  --pokeball-color-light: #e8534f;
   --pokeball-gray: #546770;
   --text-stroke-color: #2f4591;
   --background-yellow: #fcc000;
@@ -90,7 +89,7 @@
   }
 
   .modal-content {
-    background-color: var(--pokeball-color-light);
+    background-color: var(--pokeball-color);
     outline: black;
     outline-width: 2px;
   }
@@ -131,7 +130,7 @@
     width: 50%;
     font-family: pokemonFontSolid;
     color: var(--background-yellow) !important;
-    background-color: var(--pokeball-color-light);
+    background-color: var(--pokeball-color);
     border-color: black;
     /* create a text-outline */
     -webkit-text-stroke-width: 2px;
