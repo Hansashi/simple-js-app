@@ -8,15 +8,11 @@
     src: url("../resources/fonts//pokemon-solid.ttf");
   }
 
-  /* background image */
   body {
-    /* background-image: url("../resources/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw 100vh; */
     font-family: pokemonFontSolid;
   }
 
+  /* background image-hack for #15 */
   .img {
     background: url("../resources/background.jpg");
     background-position: center;
@@ -27,12 +23,9 @@
     width: 100vw;
   }
 
-  .content {
-    position: absolute;
-    left: 50%; 
-    margin-top: 5rem;
-    transform: translateX(-50%);
-    width: 80%;
+    /* background image-hack for #15 */
+  .content{
+    position: relative;
   }
 
   .navbar {
@@ -63,7 +56,6 @@
 
   .pokemon-button-container {
     position: relative;
-    /* text-align: center; */
   }
 
   .pokemon-button-text {
@@ -131,5 +123,5 @@
 
   /* fixed navbar hides list-group, so we need a margin-top to make them visible */
   .page-container {
-    margin-top: 75px; 
+    margin-top: 70px;
   }
