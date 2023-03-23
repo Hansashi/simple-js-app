@@ -1,136 +1,133 @@
-@font-face {
-  font-family: pokemonFontHollow;
-  src: url("../resources/fonts//pokemon-hollow.ttf");
-}
+  @font-face {
+    font-family: pokemonFontHollow;
+    src: url("../resources/fonts//pokemon-hollow.ttf");
+  }
 
-@font-face {
-  font-family: pokemonFontSolid;
-  src: url("../resources/fonts//pokemon-solid.ttf");
-}
+  @font-face {
+    font-family: pokemonFontSolid;
+    src: url("../resources/fonts//pokemon-solid.ttf");
+  }
 
-/* background image */
-body {
-  /* background-image: url("../resources/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100vw 100vh; */
-  font-family: pokemonFontSolid;
-}
+  /* background image */
+  body {
+    /* background-image: url("../resources/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh; */
+    font-family: pokemonFontSolid;
+  }
 
-.bg {
-  background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  /* z-index usage is up to you.. although there is no need of using it because the default stack context will work. */
-  z-index: -1; // this is optional
-}
+  .img {
+    background: url("../resources/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+  }
 
-.content{
-  position: absolute;
-  margin-top: 5rem;
-  left: 50%; 
-  transform: translateX(-50%);
-  width: 80%;
-}
+  .content{
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
 
-.navbar {
-  background-color: #cf3935;
-}
+  .navbar {
+    background-color: #cf3935;
+  }
 
-.navbar-brand {
-  font-family: pokemonFontSolid;
-  font-size: 30px;
-  color: #fcc000 !important;
-  /* create a text-outline */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #2f4591;
-}
+  .navbar-brand {
+    font-family: pokemonFontSolid;
+    font-size: 30px;
+    color: #fcc000 !important;
+    /* create a text-outline */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2f4591;
+  }
 
-.navbar-toggler {
-  background-color: #546770;
-}
+  .navbar-toggler {
+    background-color: #546770;
+  }
 
-/* pokemon list */
-list-group {
-  text-align: center;
-}
+  /* pokemon list */
+  list-group {
+    text-align: center;
+  }
 
-li {
-  list-style: none;
-}
+  li {
+    list-style: none;
+  }
 
-.pokemon-button-container {
-  position: relative;
-  /* text-align: center; */
-}
+  .pokemon-button-container {
+    position: relative;
+    /* text-align: center; */
+  }
 
-.pokemon-button-text {
-  font-family: pokemonFontSolid;
-  position: absolute;
-  top:72%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
+  .pokemon-button-text {
+    font-family: pokemonFontSolid;
+    position: absolute;
+    top:72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
 
-.pokemon-button-image {
-    padding: 10px;
-    max-width: 200px;
-}
+  .pokemon-button-image {
+      padding: 10px;
+      max-width: 200px;
+  }
 
-.pokemon-button-image:hover {
-  opacity: 75%;
-}
+  .pokemon-button-image:hover {
+    opacity: 75%;
+  }
 
-.modal-dialog-centered {
-  display: flex;
-  align-items: center;
-}
+  .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+  }
 
-.modal-header .close {
-  background-color: red;
-  border-radius:80%;
-  padding: 0px 5px 4px 5px;
-  margin: -5px -5px 0 0;
-}
+  .modal-header .close {
+    background-color: red;
+    border-radius:80%;
+    padding: 0px 5px 4px 5px;
+    margin: -5px -5px 0 0;
+  }
 
-.modal-title {
-  text-align: center;
-  width: 100%;
-  font-family: pokemonFontSolid;
-  color: #fcc000 !important;
-  /* create a text-outline */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #2f4591;
-}
+  .modal-title {
+    text-align: center;
+    width: 100%;
+    font-family: pokemonFontSolid;
+    color: #fcc000 !important;
+    /* create a text-outline */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2f4591;
+  }
 
-.modal-body {
-  text-align: center;
-  width: 100%;
-  font-family: pokemonFontSolid;
-  color: #fcc000 !important;
-  /* create a text-outline */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #2f4591;
-}
+  .modal-body {
+    text-align: center;
+    width: 100%;
+    font-family: pokemonFontSolid;
+    color: #fcc000 !important;
+    /* create a text-outline */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2f4591;
+  }
 
-.nav-buttons {
-  display: flex;
-}
+  .nav-buttons {
+    display: flex;
+  }
 
-.nav-button {
-  width: 50%;
-  font-family: pokemonFontSolid;
-  color: #fcc000 !important;
-  /* create a text-outline */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #2f4591;
-}
+  .nav-button {
+    width: 50%;
+    font-family: pokemonFontSolid;
+    color: #fcc000 !important;
+    /* create a text-outline */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2f4591;
+  }
 
-/* fixed navbar hides list-group, so we need a margin-top to make them visible */
-.page-container {
-  margin-top: 75px; 
-}
+  /* fixed navbar hides list-group, so we need a margin-top to make them visible */
+  .page-container {
+    margin-top: 75px; 
+  }
