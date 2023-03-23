@@ -1,6 +1,6 @@
 # PokDex Web App
 
-![Screenshot](/resources/screenshot-pokedex.jpg?raw=true)
+![Screenshot](/resources/screenshot-pokedex.JPG?raw=true)
 
 ## Description
 
