@@ -95,11 +95,10 @@
   }
 
   .modal-header .close {
-    background-color: red;
+    background-color: var(--pokeball-color);
     border-radius:80%;
-    padding: 5px;
-    margin: 0;
-    text-align: center;
+    padding: 0 5px;
+    margin: -5px 0;
   }
 
   .modal-title {
