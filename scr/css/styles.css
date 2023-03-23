@@ -7,12 +7,12 @@
   
   @font-face {
     font-family: pokemonFontHollow;
-    src: url("../resources/fonts//pokemon-hollow.ttf");
+    src: url("../../resources/fonts/pokemon-hollow.ttf");
   }
 
   @font-face {
     font-family: pokemonFontSolid;
-    src: url("../resources/fonts//pokemon-solid.ttf");
+    src: url("../../resources/fonts/pokemon-solid.ttf");
   }
 
   body {
@@ -21,7 +21,7 @@
 
   /* background image-hack for #15 */
   .img {
-    background: url("../resources/background.jpg");
+    background: url("../../resources/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
