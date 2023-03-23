@@ -27,10 +27,12 @@
     width: 100vw;
   }
 
-  .content{
+  .content {
     position: absolute;
     left: 50%; 
+    margin-top: 5rem;
     transform: translateX(-50%);
+    width: 80%;
   }
 
   .navbar {
